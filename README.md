@@ -16,16 +16,6 @@ This project demonstrates a lightweight deep learning pipeline using **Stochasti
 
 ---
 
-## **Table of Contents**
-1. [Dataset](#dataset)
-2. [Requirements](#requirements)
-3. [Usage](#usage)
-4. [Results](#results)
-5. [Performance Metrics](#performance-metrics)
-6. [References](#references)
-
----
-
 ## **Dataset**
 The project uses the [MNIST Dataset](http://yann.lecun.com/exdb/mnist/), which contains 28x28 grayscale images of handwritten digits (0-9). Each image is normalized to [0, 1].
 
