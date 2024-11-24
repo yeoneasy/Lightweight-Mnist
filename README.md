@@ -46,20 +46,3 @@ To run the project, the following libraries are required:
 Install dependencies:
 ```bash
 pip install torch torchvision thop matplotlib numpy pandas
-
-## **Usage**
-1. Train the Original Model
-Run the script to train the base CNN model:
-
-bash
-python train.py --epochs 10 --lr 0.01
-2. Apply SWA, Pruning, and Quantization
-Execute the following command to apply SWA, pruning, and quantization:
-
-bash
-python lightweight.py --swa_start 5 --pruning_amount 0.5
-3. Evaluate the Optimized Model
-Run the script to evaluate the pruned and quantized model:
-
-bash
-python evaluate.py
