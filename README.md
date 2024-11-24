@@ -1,3 +1,4 @@
+
 # **Lightweight Deep Learning with SWA, Pruning, and Quantization**
 
 This project demonstrates a lightweight deep learning pipeline using **Stochastic Weight Averaging (SWA)**, **Pruning**, and **Quantization** on the MNIST dataset. The goal is to optimize model size and computational efficiency while maintaining high accuracy.
@@ -13,6 +14,16 @@ This project demonstrates a lightweight deep learning pipeline using **Stochasti
   - Converts model weights to lower precision (INT8), reducing memory usage.
 - **Performance Metrics**:
   - Evaluation includes accuracy and model size.
+
+---
+
+## **Table of Contents**
+1. [Dataset](#dataset)
+2. [Requirements](#requirements)
+3. [Usage](#usage)
+4. [Results](#results)
+5. [Performance Metrics](#performance-metrics)
+6. [References](#references)
 
 ---
 
@@ -36,3 +47,54 @@ To run the project, the following libraries are required:
 Install dependencies:
 ```bash
 pip install torch torchvision thop matplotlib numpy pandas
+```
+
+---
+
+## **Usage**
+
+### 1. **Train the Original Model**
+Run the script to train the base CNN model:
+```bash
+python train.py --epochs 10 --lr 0.01
+```
+
+### 2. **Apply SWA, Pruning, and Quantization**
+Execute the following command to apply SWA, pruning, and quantization:
+```bash
+python lightweight.py --swa_start 5 --pruning_amount 0.5
+```
+
+### 3. **Evaluate the Optimized Model**
+Run the script to evaluate the pruned and quantized model:
+```bash
+python evaluate.py
+```
+
+---
+
+## **Results**
+
+| **Metric**       | **Original Model** | **Optimized Model** |
+|-------------------|--------------------|---------------------|
+| Accuracy         | 99.5%             | 99.3%              |
+| Model Size (MB)  | 25.08 MB          | 6.26 MB            |
+
+---
+
+## **Performance Metrics**
+
+### 1. **Accuracy**
+- The optimized model achieves comparable accuracy to the original model.
+
+### 2. **Model Size**
+- Pruning and quantization reduce the model size by approximately **75%**.
+
+---
+
+## **References**
+
+1. Izmailov, P., Podoprikhin, D., Garipov, T., Vetrov, D., & Wilson, A. G. "Averaging Weights Leads to Wider Optima in Deep Learning." 2018. [Link](https://arxiv.org/abs/1803.05407)
+2. Han, S., Pool, J., Tran, J., & Dally, W. "Learning both Weights and Connections for Efficient Neural Networks." 2015. [Link](https://arxiv.org/abs/1506.02626)
+3. Jacob, B., et al. "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference." 2018. [Link](https://arxiv.org/abs/1712.05877)
+4. Frantar, E., Singh, S. P., & Alistarh, D. "Optimal Brain Compression: A Framework for Accurate Post-Training Quantization and Pruning." [Link](https://arxiv.org/abs/2210.03887)
