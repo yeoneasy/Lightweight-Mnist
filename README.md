@@ -77,7 +77,7 @@ python evaluate.py
 
 | **Metric**       | **Original Model** | **Optimized Model** |
 |-------------------|--------------------|---------------------|
-| Accuracy         | 99.5%             | 99.3%              |
+| Accuracy         | 99.5%             | 99.5%              |
 | Model Size (MB)  | 25.08 MB          | 6.26 MB            |
 
 ---
