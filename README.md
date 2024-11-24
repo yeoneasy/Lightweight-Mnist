@@ -32,7 +32,7 @@ The following steps outline the workflow of the project:
 - Perform training for 10 epochs, using a validation dataset to monitor performance during training.
 
 ### **3. Stochastic Weight Averaging (SWA)**
-- Apply SWA starting from the 5th epoch (`--swa_start 5`).
+- Apply SWA starting from the 150th epoch (`--swa_start 150`).
 - Average the model weights over multiple epochs to improve generalization.
 
 ### **4. Pruning**
