@@ -17,6 +17,52 @@ This project demonstrates a lightweight deep learning pipeline using **Stochasti
 
 ---
 
+## **Code Execution Process**
+
+The following steps outline the workflow of the project:
+
+### **1. Data Preparation**
+- Load the MNIST dataset, which contains 28x28 grayscale images of handwritten digits.
+- Normalize the dataset to scale pixel values between 0 and 1.
+- Convert the data into 4-dimensional tensors with a shape of `(batch_size, channels, height, width)` for CNN compatibility.
+
+### **2. Model Training**
+- Train a Convolutional Neural Network (CNN) model using the training data.
+- Use **AdamW optimizer** with a learning rate of `0.01` to minimize the **Cross-Entropy Loss**.
+- Perform training for 10 epochs, using a validation dataset to monitor performance during training.
+
+### **3. Stochastic Weight Averaging (SWA)**
+- Apply SWA starting from the 5th epoch (`--swa_start 5`).
+- Average the model weights over multiple epochs to improve generalization.
+
+### **4. Pruning**
+- Perform **L1 unstructured pruning** on convolutional layers to reduce the number of parameters.
+- Pruning removes 50% (`--pruning_amount 0.5`) of the least important weights based on their L1 norm.
+- Update the BatchNorm statistics to adjust for pruned weights.
+
+### **5. Quantization**
+- Convert the pruned model's weights to **INT8** format using dynamic quantization.
+- Quantization reduces memory usage and improves inference speed while maintaining accuracy.
+
+### **6. Model Evaluation**
+- Evaluate both the original and optimized models on the validation dataset.
+- Compare the accuracy, model size, and parameter count.
+- For optimized models, approximate the FLOPs and evaluate their inference speed on CPU.
+
+### **7. Results Visualization**
+- Generate comparison plots to visualize the difference between the original and optimized models in terms of accuracy, model size, and parameter count.
+
+---
+
+### **Execution Command**
+To reproduce the entire pipeline, follow these steps:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   
+---
+
 ## **Table of Contents**
 1. [Dataset](#dataset)
 2. [Requirements](#requirements)
