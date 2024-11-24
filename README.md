@@ -47,10 +47,6 @@ The following steps outline the workflow of the project:
 ### **6. Model Evaluation**
 - Evaluate both the original and optimized models on the validation dataset.
 - Compare the accuracy, model size, and parameter count.
-- For optimized models, approximate the FLOPs and evaluate their inference speed on CPU.
-
-### **7. Results Visualization**
-- Generate comparison plots to visualize the difference between the original and optimized models in terms of accuracy, model size, and parameter count.
 
 ---
 
