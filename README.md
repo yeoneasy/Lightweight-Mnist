@@ -104,7 +104,7 @@ python train.py --epochs 200 --lr 0.01
 ### 2. **Apply SWA, Pruning, and Quantization**
 Execute the following command to apply SWA, pruning, and quantization:
 ```bash
-python lightweight.py --swa_start 5 --pruning_amount 0.5
+python lightweight.py --swa_start 150 --pruning_amount 0.5
 ```
 
 ### 3. **Evaluate the Optimized Model**
