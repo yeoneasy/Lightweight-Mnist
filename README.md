@@ -98,7 +98,7 @@ pip install torch torchvision thop matplotlib numpy pandas
 ### 1. **Train the Original Model**
 Run the script to train the base CNN model:
 ```bash
-python train.py --epochs 10 --lr 0.01
+python train.py --epochs 200 --lr 0.01
 ```
 
 ### 2. **Apply SWA, Pruning, and Quantization**
