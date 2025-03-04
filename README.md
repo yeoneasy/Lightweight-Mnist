@@ -29,7 +29,7 @@ The following steps outline the workflow of the project:
 ### **2. Model Training**
 - Train a Convolutional Neural Network (CNN) model using the training data.
 - Use **AdamW optimizer** with a learning rate of `0.01` to minimize the **Cross-Entropy Loss**.
-- Perform training for 10 epochs, using a validation dataset to monitor performance during training.
+- Perform training for 200 epochs, using a validation dataset to monitor performance during training.
 
 ### **3. Stochastic Weight Averaging (SWA)**
 - Apply SWA starting from the 150th epoch (`--swa_start 150`).
