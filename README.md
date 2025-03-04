@@ -79,11 +79,6 @@ To run the project, the following libraries are required:
 - NumPy
 - Pandas
 
-Install dependencies:
-```bash
-pip install torch torchvision thop matplotlib numpy pandas
-```
-
 ---
 
 ## **Usage**
