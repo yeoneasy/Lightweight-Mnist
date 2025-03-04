@@ -61,7 +61,9 @@ The following steps outline the workflow of the project:
 ---
 
 ## **Dataset**
-The project uses the [MNIST Dataset](http://yann.lecun.com/exdb/mnist/), which contains 28x28 grayscale images of handwritten digits (0-9). Each image is normalized to [0, 1].
+The project uses the [MNIST Dataset](http://yann.lecun.com/exdb/mnist/), which contains 28x28 grayscale images of handwritten digits (0-9). 
+
+Each image is normalized to [0, 1].
 
 ---
 
