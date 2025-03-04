@@ -1,5 +1,5 @@
 
-# **Lightweight Deep Learning with SWA, Pruning, and Quantization**
+## **Lightweight Deep Learning with SWA, Pruning, and Quantization**
 
 This project demonstrates a lightweight deep learning pipeline using **Stochastic Weight Averaging (SWA)**, **Pruning**, and **Quantization** on the MNIST dataset. The goal is to optimize model size and computational efficiency while maintaining high accuracy.
 
