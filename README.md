@@ -50,15 +50,6 @@ The following steps outline the workflow of the project:
 
 ---
 
-### **Execution Command**
-To reproduce the entire pipeline, follow these steps:
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
-   
----
-
 ## **Table of Contents**
 1. [Dataset](#dataset)
 2. [Requirements](#requirements)
