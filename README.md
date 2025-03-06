@@ -52,10 +52,10 @@ The following steps outline the workflow of the project:
 
 ## **Table of Contents**
 1. [Dataset](#dataset)
-2. [Requirements](#requirements)
-3. [Usage](#usage)
-4. [Results](#results)
-5. [Performance Metrics](#performance-metrics)
+2. [Usage](#usage)
+3. [Results](#results)
+4. [Performance Metrics](#performance-metrics)
+5. [Requirements](#requirements)
 6. [References](#references)
 
 ---
@@ -64,20 +64,6 @@ The following steps outline the workflow of the project:
 The project uses the [MNIST Dataset](http://yann.lecun.com/exdb/mnist/), which contains 28x28 grayscale images of handwritten digits (0-9). 
 
 Each image is normalized to [0, 1].
-
----
-
-## **Requirements**
-To run the project, the following libraries are required:
-
-- Python 3.8+
-- PyTorch 1.11+
-- torchvision
-- `thop` (for parameter calculation)
-- `torch.quantization`
-- Matplotlib
-- NumPy
-- Pandas
 
 ---
 
@@ -119,6 +105,20 @@ python evaluate.py
 
 ### 2. **Model Size**
 - Pruning and quantization reduce the model size by approximately **75%**.
+
+---
+
+## **Requirements**
+To run the project, the following libraries are required:
+
+- Python 3.8+
+- PyTorch 1.11+
+- torchvision
+- `thop` (for parameter calculation)
+- `torch.quantization`
+- Matplotlib
+- NumPy
+- Pandas
 
 ---
 
