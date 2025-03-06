@@ -52,11 +52,10 @@ The following steps outline the workflow of the project:
 
 ## **Table of Contents**
 1. [Dataset](#dataset)
-2. [Usage](#usage)
-3. [Results](#results)
-4. [Performance Metrics](#performance-metrics)
-5. [Requirements](#requirements)
-6. [References](#references)
+2. [Results](#results)
+3. [Performance Metrics](#performance-metrics)
+4. [Requirements](#requirements)
+5. [References](#references)
 
 ---
 
@@ -64,28 +63,6 @@ The following steps outline the workflow of the project:
 The project uses the [MNIST Dataset](http://yann.lecun.com/exdb/mnist/), which contains 28x28 grayscale images of handwritten digits (0-9). 
 
 Each image is normalized to [0, 1].
-
----
-
-## **Usage**
-
-### 1. **Train the Original Model**
-Run the script to train the base CNN model:
-```bash
-python train.py --epochs 200 --lr 0.01
-```
-
-### 2. **Apply SWA, Pruning, and Quantization**
-Execute the following command to apply SWA, pruning, and quantization:
-```bash
-python lightweight.py --swa_start 150 --pruning_amount 0.5
-```
-
-### 3. **Evaluate the Optimized Model**
-Run the script to evaluate the pruned and quantized model:
-```bash
-python evaluate.py
-```
 
 ---
 
